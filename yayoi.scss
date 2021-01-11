@@ -1,0 +1,1097 @@
+.slick-prev::before{
+  color: black;
+  font-size:50px;
+  border-right:1px black solid;
+  border-left:1px black solid;
+  border-top:1px black solid;
+  border-bottom:1px black solid;
+  border-right: 0;
+  left:1150px;
+  z-index: 100000000;
+  // left: calc((100vw - 300px) / 2);
+ 
+ }
+ .slick-next::before{
+  color: green;
+  font-size: 130px;
+  // right:-1530px;
+  z-index: 100000000;
+ }
+
+
+ html{
+  max-width: 1900px;
+  margin:0;
+  overflow-x: hidden;
+ }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1900px;
+  margin:0;
+  overflow-x: hidden;
+}
+
+
+.header-column{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid #bfbfbf;
+  max-width: 1900px;
+  // width:1900px;
+  height:80px;
+}
+.header{
+  margin:auto;
+  max-width: 1200px;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo{
+  // display: inline;
+  margin-top:15px;
+  margin-left:0;
+  padding-left:0;
+}
+
+.header-horizontal1 ul{
+display: flex;
+margin-left:380px;
+margin-top:10px;
+margin-bottom: 5px;
+& li{
+  list-style: none;
+  letter-spacing:1px;
+  font-size:13.5px;
+  font-weight: 500;
+  & a{
+    text-decoration: none;
+    color:rgb(73, 72, 72);
+    & span{
+     margin-right:20px;
+      }
+    }
+  }
+}
+
+
+.header-horizontal2 ul{
+  display: flex;
+  margin-left:220px;
+  margin-top:-10px;
+  & li{
+    list-style: none;
+    letter-spacing:1px;
+    font-size:16px;
+    font-weight: 900;
+
+    & a{
+      text-decoration: none;
+      color:rgb(73, 72, 72);
+      & span{
+       margin-right:20px;
+      //  max-width:40px;
+        }
+      }
+    }
+  }
+// side menu------------------------------------------------
+// .side-menu-parent{
+//   height:0;
+//   overflow:hidden;
+// }
+.side-menu1{
+  height:0;
+  overflow:hidden;
+  background-color:red;
+}
+
+
+.side-menu1:hover{
+  height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.13) 3px 5px 4px 0px;
+    line-height: 25px;    
+    padding: 10px 0px 5px 10px;
+}
+
+
+
+
+
+  .small-text{
+    font-weight: normal;
+    margin-left:10px;
+  }
+
+.big-pictures img{
+  width:1480px;
+  height:500px;
+  margin:auto;
+}
+// -------------------------------------------------------------
+.row-fluid{
+  margin-top:140px;
+  max-width: 1900px;
+}
+
+.row-inner{
+  max-width: 1200px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 80px;
+  margin:auto;
+  text-align: center;
+  box-sizing: border-box;
+  & h2{
+    font-weight: 500;
+  }
+}
+.container{
+  width: 100%;
+  margin: 0 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+.left-container{
+  // float: left;
+  text-align: center;
+  // font-size: 0;
+  width: 47.46%;
+}
+.left-container h1{
+  color:rgb(0,91,172);
+  font-size:1.8em;
+  font-weight: 500;
+}
+.left-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.tax-return{
+width:64%;
+}
+.tax-return h3{
+  border-bottom: 3px solid #3cddde;
+  // margin-bottom: 10px;
+  // line-height: 1.5px;
+}
+.tax-return h3 a{
+  text-decoration: none;
+  color:black;
+  font-size: 0.9em;
+}
+.tax-return-flex{ //確定申告2つ
+  display:flex;
+  flex-wrap: wrap;
+  // text-align: center;
+}
+.tax-return-flex ul{
+  margin:0;
+  // width:100px;
+}
+// .tax-return-flex li{
+//   width:100px;
+// }
+
+.list-goods{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  padding-left:0;
+}
+.list-goods li{
+  width:50%;
+  list-style: none;
+}
+.list-goods li:nth-child(1){
+  margin-right:50px;
+}
+.list-goods li a{
+  text-decoration: none;
+}
+.list-goods span{
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.ver-account{
+  width:36%;
+}
+.ver-account h3{
+  border-bottom: 3px solid #3cddde;
+  margin-top:17px;
+  margin-left: 10px;
+}
+.ver-account ul{
+  padding-left:0px;
+}
+.ver-account h3 a{
+  color:black;
+  text-decoration: none;
+}
+.ver-account li{
+  list-style: none;
+}
+.ver-account a{
+  text-decoration: none;
+}
+.ver-account span{
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.ver-payroll{
+  width:276px;
+}
+.ver-payroll li{
+list-style: none;
+}
+
+.ver-payroll h3{
+  border-bottom: 3px solid  #4db87a;
+  // width:500px;
+}
+.ver-payroll a{
+  text-decoration: none;
+  color:black;
+  letter-spacing: 1px;
+  // text-align: center;
+  // margin:auto;
+}
+.ver-payroll span{
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 600;
+  // letter-spacing: 2px;
+}
+
+
+.ver-misoca{
+  width:276px;
+}
+.ver-misoca h3{
+  border-bottom: 3px solid rgb(16,163,182);
+  margin-left:10px;
+}
+.ver-misoca h3 a{
+  text-decoration: none;
+  color:black;
+}
+.ver-misoca span{
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 600;
+}
+.misoca{
+  margin-right:0 !important;
+}
+
+
+
+// ----------------------------------------------------------------------
+
+.right-container{
+    text-align:center;
+    width: 47.46%;
+    display:flex;
+    flex-wrap: wrap;
+  }
+.right-container h1{
+  width:100%;
+  color:rgb(0,91,172);
+  font-size:1.8em;
+  font-weight: 500;
+}
+.right-flex{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  // justify-content: space-between;
+}
+.ver-declaration{
+  width:50%;
+}
+.ver-declaration h3{
+  border-bottom: 3px solid rgb(60,189,222);
+  margin-left:10px;
+  margin-top:17px;
+}
+
+.ver-declaration h3 a{
+  color:black;
+  text-decoration: none;
+}
+.list-goods3{
+// margin-right:0;
+margin-left:100px;
+}
+
+.ver-account2{
+  width:47%;
+  // background-color: rgb(134, 134, 233);
+}
+.ver-account2 h3{
+  border-bottom: 3px solid rgb(60,189,222);
+  margin-left:10px;
+  margin-top:17px;
+}
+.ver-account2 h3 a{
+  color:black;
+  text-decoration: none;
+}
+
+.yayoi-kaikei21{
+  font-size: 0.9em;
+  text-decoration: none;
+  font-weight: 600;
+  color:black;
+}
+
+
+.ver-payroll{
+  width:33%;
+}
+.list-goods4{
+  display: flex;
+  justify-content: space-between;
+  padding:0;
+}
+.ver-payroll li{
+  margin-left:-10px;
+}
+.list-goods2 img{
+  margin-right:30px;
+}
+
+
+.ver-dealing{
+  width:33%;
+}
+.ver-dealing h3{
+  border-bottom: 3px solid rgb(238,133,158);
+  margin-left:10px;
+}
+.ver-dealing li{
+  margin-left:-50px;
+}
+.ver-dealing li:nth-child(1){
+  margin-left:10px;
+}
+.ver-dealing img{
+  margin-right:1110px;
+}
+// .list-goods3 li{
+//   list-style: none;
+// }
+// list-goods3{
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+
+.ver-customer{
+  width:26%;
+}
+.ver-customer h3{
+  border-bottom: 3px solid rgb(242,164,28);
+  margin-left:10px;
+}
+.manage-customers{
+  margin-left:60px;
+}
+//--------------------------------------------------------------
+.horizontal-menu{
+  width:100%;
+  display: flex;
+  // flex-direction: column;
+  margin:40px 0;
+}
+.horizontal-text{
+  width:17%;
+  background-color: rgb(241, 240, 240);
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  padding:40px 0;
+}
+.horizontal-wide{
+  width:100%;
+}
+// .horizontal-wide li{
+//   border-right:1px solid black;
+// }
+.horizontal-wide a{
+  display: table;
+  text-decoration: none;
+  font-size:13px;
+  font-weight: 500;
+  border-right:1px solid rgb(228, 218, 218);
+  padding-right:15px;
+}
+// .horizontal-wide a span{
+// }
+
+
+.pics{
+width:100%;
+list-style: none;
+height: 90px;
+display: flex;
+}
+.txt{
+  display:table-row; 
+  //display:tableはテーブル要素のように表示するためのCSSです。このスタイルを用いることでtableタグを使わずに、同様のスタイルを利用することができます この場合tr要素のような表示にします
+  color:rgb(82, 77, 77);
+  font-size:15px;
+}
+
+// ----------------------------------------------------------------------
+.three-menus ul{
+  display: flex;
+  justify-content: center;
+  width:100%;
+
+}
+.menu1{
+  list-style:none;
+}
+.menu1 button{
+  border: 1px solid rgb(50, 50, 241);
+  background: #fff;
+  font-size: 16px;
+  // font-size: 1.6rem;
+  min-width: 190px;
+  border-radius: 30px;
+  padding:11px 17px 11px 17px;
+}
+.menu1 button:nth-child(1){
+  margin-right: 60px;
+}
+
+.menu1 button a{
+  color:rgb(50, 50, 241);
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+  padding:0;
+}
+// -------------------------------------------------------
+.ver-bg-gradient{
+  // width:1900px;
+  //gradationを付ける
+  background:linear-gradient(rgb(249,249,249), rgb(255,255,255));
+  height: 694px;
+  margin:0;
+}
+.container2{
+  width:1200px;
+  margin:auto;
+}
+.hdg-l2{ //h2
+text-align: center;
+margin-bottom:40px;
+font-weight: normal; //太字を細字にする
+padding-top:40px;
+}
+
+.three-boxes{
+  display:flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+// .col:nth-child(1){
+//   margin: 0 15px;
+// }
+.col:hover{
+//box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定;
+box-shadow: 0px 0px 0px 1px red;
+transition: 0.2s;
+}
+
+.col a{
+  // display: block;
+  overflow: hidden;
+  border-radius: 4px;
+  text-decoration: none;
+  color: rgb(58, 56, 56);
+  // font-size:15px;
+}
+.lyt-media{
+  display: table;
+  width:385px;
+}
+
+.item2{
+  width:100%;
+}
+.explain{
+  margin-bottom: 0;
+}
+.explain-hdg{
+  font-weight: 700;
+  margin-bottom:20px;
+  margin-left:15px;
+}
+.explain-txt{
+  margin-left:15px;
+}
+// -------------------------------------------------------
+.ta-r{
+  text-align: right;
+  // color:black;
+  & a{                      //このアンパサンドは親を表す。
+    color:rgb(68, 64, 64);
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+.ta-r a:hover{
+  color: red;
+  transition: 0.3s;
+}
+
+// ----------------------------------------------------------------------
+.horizontal-words{
+  width:900px;
+  padding:0;
+}
+.table-head{
+  background-color:rgb(102,102,102);
+  margin-right: 20px;
+  height: 90px;
+  width:300px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  // font-size: 1.6rem;
+  box-sizing: border-box;
+}
+.horizontal-words td{
+  display: block; //インラインのものをブロック体に変える
+  margin-left:20px;
+}
+.link-list-line{
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  // font-size: 14px;
+  // font-size: 1.4rem;
+
+  // padding: 0 10px 0 0;
+  // position: relative;
+  // display: inline-block;
+
+
+}
+.link-list-line li{
+  padding-right:10px;
+  display:inline-block;
+
+  // width: 1px;
+  // height: 12px;
+  // background: #7d7d7d;
+  // margin: -6px 0 0;
+  // position: absolute;
+  // top: 50%;
+  // right: 0;
+}
+.link-list-line li a{
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  font-weight: 400;
+  color:black;
+  font-size: 14px;
+}
+
+
+
+// -------------------------------------------------------------
+// .new-row{
+//   width:1900px;
+// }
+.container3{
+  max-width:1200px;
+  margin: auto;
+  margin-top:-50px;
+}
+.container3 h2{
+  text-align: center;
+  font-weight: 500;
+}
+.man-and-woman{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.man{
+  display:flex;
+  text-decoration: none;
+  width:49%;
+  height:280px;
+  color:black;
+  // box-sizing: border-box;
+  // margin-right:20px;
+}
+.man img{
+  height:100%;
+}
+.definition-name{
+  font-size: 13px;
+  font-weight: 700;
+  height: 17px;
+}
+.definition-icon{
+  background-color: rgb(128, 123, 123);
+  width:80%;
+  color:rgb(231, 231, 231);
+  text-align: center;
+  font-size: 13px;
+  margin-left:10px;
+}
+
+
+.woman{
+  display: flex;
+  text-decoration: none;
+  width: 49%;
+}
+.woman img{
+  height:100%;
+}
+
+.content{
+  background-color: rgb(247,247,247);
+  padding: 17px 50px 17px 20px;
+  // width:200px;
+}
+.content p txt{
+  font-size:14px;
+}
+.man:hover{
+  // border:rgb(245, 9, 205) 10px solid;
+    // margin:-2px;
+  transition: 0.2s;
+  box-shadow: 0px 0px 0px 1px red;//ボーダーを内側に入れることで動かない
+}
+.woman:hover{
+  box-shadow: 0px 0px 0px 1px red;
+  transition: 0.2s;
+}
+
+// ----------------------------------------------------
+// .new-row2{
+//   width:1900px;
+// }
+.container4{
+  max-width:1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.container4 h2{
+text-align: center;
+font-weight: 400;
+}
+.container4 a{
+  display:block;
+
+}
+.container4 a:hover{
+  transition: color .1s ease-out;
+  color: #4c4c4c;
+}
+.people-who-are-using-product{
+// flex:1;
+width:50%;
+}
+
+.two-items-flex{
+  display: flex;
+  // width:33%;
+  // flex:1;
+  // list-style: none;
+}
+.list{
+  list-style: none;
+  text-decoration: none;
+}
+.list:nth-child(1){
+  width:50%;
+}
+.list:nth-child(2){
+  width:50%;
+}
+
+.txt2{
+  text-decoration: none;
+  display:table-row; 
+  //display:tableはテーブル要素のように表示するためのCSSです。このスタイルを用いることでtableタグを使わずに、同様のスタイルを利用することができます この場合tr要素のような表示にします
+  color:rgb(82, 77, 77);
+  font-size:15px;
+  text-align: center;
+}
+.two-items-flex a{
+  text-decoration: none;
+}
+// .two-items-flex .txt br{
+//   margin-left:50px;
+// }
+.people-who-are-accountant{
+  border-left: 1px solid rgb(192, 187, 187);
+  border-right: 1px solid rgb(190, 187, 187);
+  padding-left: 5px;
+  padding-right: 5px;
+  width:25%
+  // margin:auto;
+}
+.people-who-are-accountant ul{
+display: flex;
+justify-content: center;
+padding:0;
+}
+.people-who-are-accountant a{
+  text-decoration: none;
+  // display: flex;
+}
+.yayoi-pap{
+  margin-left:40px;
+}
+
+
+
+
+.people-who-are-partner{
+  width:25%;
+}
+.people-who-are-partner ul{
+  display:flex;
+  justify-content: center;
+  padding:0;
+}
+.people-who-are-partner a{
+  text-decoration: none;
+}
+.txt3{
+  text-decoration: none;
+  display:table-row; 
+  //display:tableはテーブル要素のように表示するためのCSSです。このスタイルを用いることでtableタグを使わずに、同様のスタイルを利用することができます この場合tr要素のような表示にします
+  color:rgb(82, 77, 77);
+  font-size:15px;
+  text-align: center;
+  // font-size: 14px;
+}
+
+//----------------------------------------------------------------
+.new-row3{
+  // width:1900px;
+  // background:linear-gradient(rgb(249,249,249), rgb(255,255,255));
+  background-color:rgb(249,249,249) ;
+}
+.container5{
+  max-width:1200px;
+  margin: auto;
+  // display: flex;
+  // justify-content: space-around;
+}
+.container5 h2{
+text-align: center;
+font-weight: 400;
+padding-top:30px ;
+margin-bottom: -10px;
+padding-bottom: 0;
+}
+// 要素を横並びで配置する方法【 display:table, display:table-cell 】
+// 「display:table」と「display:table-cell」はセットで使われることが多いプロパティ
+.list-of-press-release{
+  font-size:16px;
+  font-weight: 500;
+  & dl{
+    display: table;
+    width:100%;
+    & dt{
+      display: table-cell;
+      white-space: nowrap; //white-space プロパティは、要素内のホワイトスペースをどのように扱うかを設定します。
+      width:125px;
+      & dd{
+        // padding-left: 20px;
+        display: table-cell;
+    vertical-align: top;
+    width: 100%;
+    margin:0;
+    // margin-inline-start: 20px; ???
+      }
+    }
+  }
+}
+
+.list-of-press-release a{
+  text-decoration: none;
+  color:black;
+}
+.list-of-press-release a:hover{
+  color:red;
+  transition: 0.3s;
+}
+
+// --------------------------------------------------------------
+.importantInfo{
+border:1px solid rgb(175, 170, 170);
+margin-top:20px;
+margin-bottom: 10px;
+}
+.importantInfo li{
+list-style: none;
+line-height: 30px;
+
+}
+.importantInfo li a{
+  color:black;
+  text-decoration: none;
+}
+
+
+// .date-list{
+//   display: flex;
+// }
+.date-list li{
+list-style: none;
+margin: 0 0 18px;
+}
+.date-list li  a{
+  text-decoration: none;
+  color:rgb(97, 93, 93);
+}
+.flex{
+  display: flex;
+  // justify-content: space-around;
+}
+// .rCol{
+//   display: inline-block;
+//   // margin-left:50px;
+// }
+
+
+
+
+// ------------------------------------------------------------
+.share-and-tweet{
+  max-width:1900px;
+  background-color: rgb(249,249,249);
+  // margin-top: 40px;
+}
+.container6{
+  max-width:1200px;
+  margin: auto;
+  // display: flex;
+  // justify-content: space-around;
+}
+.container6 Ul{
+  display: flex;
+}
+
+
+
+
+.see-current-operating-service-situation a{
+  color:black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.first-line{
+  margin-bottom: 20px;
+}
+.see-current-operating-service-situation .date{
+margin-right:20px;
+}
+.see-current-operating-service-situation li{
+  list-style: none;
+}
+.flex span{
+  color:black;
+}
+
+
+.small-white-box{
+  background-color: white;
+  height:80px;
+}
+.small-white-box li{
+  list-style: none;
+  line-height: 40px;
+}
+.small-white-box a{
+  text-decoration: none;
+  color:black;
+  font: size 15px;
+  font-weight: 500;
+}
+
+
+
+.fb{
+  list-style: none;
+}
+
+
+
+
+
+
+// ------------------------------------------------------------
+.footer{
+  max-width:1900px;
+  border-top: #ccc 1px solid;
+  margin-top:-18px;
+}
+.container7{
+  max-width:1220px;
+  margin: auto;
+  box-sizing: content-box;
+  // display: flex;
+  // justify-content: space-around;
+  // line-height: 32px
+  letter-spacing: 1px;
+}
+.footer-lyt-column{
+  display: flex;
+  margin-top:15px;
+}
+.footer-lyt-column li{
+  list-style: none;
+  // font-size:0.9em;
+}
+.footer-lyt-column li:nth-child(1){
+  margin-top: -13px;
+}
+
+.footer-menu{
+  // display: flex;
+  border-bottom: #ccc 1px solid;
+}
+.top-page{
+  margin-left:187px;
+  font-weight: 600;
+  // font-size:0.9em;
+  // margin-bottom: 20px;
+}
+.top-page a:hover{
+  color:blue;
+  text-decoration: underline;
+  transition:0.3s;
+
+}
+.top-page a{
+  color:rgb(71, 68, 68);
+  text-decoration: none;
+}
+
+
+.footer-high-link a{
+color:rgb(78, 78, 78);
+text-decoration: none;
+font-weight: 900;
+font-size: 14px;
+}
+
+.footer-link-hdg{
+  color:rgb(167, 161, 161);
+  font-size:13px;
+}
+
+.footer-link-list{
+font-size:0.8em;
+color:black;
+font-weight: 500;
+line-height: 24px;
+margin-top: -15px;
+}
+.footer-link-list li{
+  // line-height: 32px;
+  list-style: none;
+  margin-left:-30px;
+  // line-height: 30px;
+}
+.footer-link-list li a{
+  color:rgb(44, 43, 43);
+  text-decoration: none;
+}
+
+.container7 a:hover{
+  color:blue;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+
+.second-list{
+  margin-top:28px;
+ 
+}
+
+.col-narrow{
+  border-left:rgb(204, 193, 193) 1px solid;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+// -----------------------------------------------
+.footer-utility{
+  background-color:rgb(0,98,182) ;
+  margin-top:0;
+}
+.nav-footer-utility{
+  display: flex;
+  justify-content: center;
+  margin:0;
+}
+.nav-footer-utility li{
+  list-style: none;
+  margin:0 10px;
+  font-size:12px;
+  padding-top:10px;
+}
+.footer-utility a{
+  color:white;
+  text-decoration: none;
+}
+
+.copyright{
+  text-align: center;
+  color:white;
+  padding-bottom:15px;
+  margin-bottom: 0;
+}
+
+
+
+
+
+// -----------------------------
+.link-pagetop{
+  display:block;
+
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  display: none;
+  z-index: 9999;
+}

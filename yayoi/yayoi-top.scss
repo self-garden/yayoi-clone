@@ -1,0 +1,518 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+.standard-width{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+div.show-list-link{
+  text-align: right;
+}
+
+header{
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  .header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    &__logo{
+      height: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+      flex: 0;
+    }
+    &__menus{
+      flex: 1;      
+      .header__menu__upper{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.8em;
+        color: #888;
+        ul{
+          display: flex;
+          li{
+            list-style: none;
+            padding: 1em;
+            &::before{
+              content: ">";
+              padding: 0 0.5em;
+              transform: scaleX(0.5);
+            }
+          }
+        }
+      }
+      .header__menu__bottom{
+        display: flex;
+        justify-content: flex-end;
+        ul{
+          display: flex;
+          font-weight: bold;
+          li{
+            position: relative;
+            list-style: none;
+            padding: 1em 1em;
+            &+li::before{
+              content: "";
+              display: inline-block;
+              position: absolute;
+              width: 1em;
+              height: 0.8em;
+              top: 1.2em;
+              left: 0;
+              border-left: 1px solid #aaa;
+            }
+            &.sep{
+              display: none;
+              font-weight: normal;
+              color: #aaa;
+            }
+            &.my-portal{
+              font-weight: normal;
+            }
+            .button__search{
+              width: 2em;
+              height: 2em;
+              border-radius: 50%;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// div.topviewはカルーセルが出来上がるまでの仮スタイル
+div.topview{
+  width: 100%;
+  .topview__div__inner{
+    width: 1480px;
+    height: 500px;
+    margin: auto;
+  }
+}
+section{
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+section.products{
+  display: flex;
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+  div.products{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    h3{
+      font-size: 1.5em;
+      color: #0C63B0;
+      width: 100%;
+      text-align: center;
+    }
+    .products__div__items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 0.25em;
+      h4{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+        border-bottom: 3px solid #3CBDDE;
+        &::after{
+          position: absolute;
+          right: 0;
+          color: #aaa;
+          content: ">";
+          transform: scaleX(0.5);
+        }
+      }
+      img,div{
+        padding: 0.5em;
+        font-size: 0.8rem;
+      }
+      &.kakutei{
+        width: 66%;
+        h4{
+          border-bottom: 3px solid #3CBDDE;
+        }
+      }
+      &.kaikei{
+        width: 33%;
+        h4{
+          border-bottom: 3px solid #2CA3E5;
+        }
+      }
+      &.kyuyo{
+        width: 50%;
+        h4{
+          border-bottom: 3px solid #4DB87A;
+        }
+      }
+      &.misoca{
+        width: 50%;
+        h4{
+          border-bottom: 3px solid #10A3B6;
+        }
+      }
+      &.kakutei-pkg{
+        width: 50%;
+        h4{
+          border-bottom: 3px solid #3CBDDE;
+        }
+      }
+      &.kaikei-pkg{
+        width: 50%;
+        h4{
+          border-bottom: 3px solid #2CA3E5;
+        }
+      }
+      &.kyuyo-pkg{
+        width: 38%;
+        display: flex;
+        h4{
+          border-bottom: 3px solid #4DB87A;
+        }
+      }
+      &.hanbai-pkg{
+        width: 38%;
+        display: flex;
+        h4{
+          border-bottom: 3px solid #4DB87A;
+        }
+      }
+      &.kokyaku-pkg{
+        width: 24%;
+        display: flex;
+        h4{
+          border-bottom: 3px solid #4DB87A;
+        }
+      }
+    }
+  }
+}
+section.products-gyomu{
+  width: 100%;
+  display: flex;
+  h3{
+    text-align: center;
+    vertical-align: middle;
+  }
+  div.products-gyomu__div__caption{
+    width: 16.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 0.25em;
+  }
+  div.products-gyomu__div__item{
+    font-size: 0.9rem;
+    position: relative;
+    width: 16.6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0.25em 1em;
+    &::after{
+      position: absolute;
+      right: 1rem;
+      top: 25%;
+      color: #aaa;
+      content: ">";
+      transform: scaleX(0.5);
+    }
+    div{
+      text-align: center;
+    }
+    &:nth-of-type(n+3){
+      border-left: 1px solid #aaa;
+    }
+  }
+}
+
+section.products-link{
+  display: flex;
+  justify-content: center;
+  a{
+    text-decoration: none;
+    height: 3rem;
+    padding: 1rem 2.5rem;
+    margin: 0 2rem;
+    border: 1px solid #58d;
+    color: #58d;
+    border-radius: 1.5rem;
+    position: relative;
+    &::after{
+      display: inline-block;
+      position: absolute;
+      width: 0.25rem;
+      height: 0.25rem;
+      right: 1rem;
+      top: calc( 50% );
+      content: "";
+      border-top: 2px solid #58d;
+      border-right: 2px solid #58d;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+section.help-service{
+  background: linear-gradient(#F7F7F7, #fff );
+  div.help-service__div__services{
+    display: flex;
+    &-item{
+      width: 33.3%;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+      h3, p{
+        padding: 1em;
+      }
+      h3{
+        position: relative;
+        &::after{
+          position: absolute;
+          font-size: 2rem;
+          right: 1rem;
+          top: 25%;
+          color: #aaa;
+          content: ">";
+          transform: scaleX(0.5);
+        }
+      }
+    }
+  }
+  div.help-service__div__others{
+    text-align: right;
+  }
+  div.help-service__div__features{
+    display: flex;
+    .caption{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #666;
+      h3{
+        color: #fff;
+        white-space: nowrap;
+        padding: 1rem;
+      }
+    }
+    .features{
+      padding: 1em;
+      ul{
+        font-size:0.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+          list-style: none;
+          line-height: 1.5em;
+          padding: 0 0 0 0.5em;
+          &+li::before{
+            content: "|";
+            padding-right: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
+section.interview{
+  div.interview__div__cases{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    &-item{
+      width: 49%;
+      height: 281px;
+      padding: 0 0 0 0;
+      display: flex;
+      &-text{
+        position: relative;
+        background-color: #f6f6f6;
+        padding: 1em 3em 1em 1em;
+        &::after{
+          position: absolute;
+          width: 0.75rem;
+          height: 0.75rem;
+          top: 50%;
+          right: 0.75em;
+          content: "";
+          border-bottom: 2px solid #aaa;
+          border-right: 2px solid #aaa;
+          transform: rotate(-45deg);
+        }
+        p,h3{
+          padding-bottom: 1em;
+        }
+        p.interview-products{
+          color: white;
+          font-size: 0.75rem;
+          background-color: #666666;
+          text-align: center;
+          padding: 0.5em 0;
+          margin: 0.5em 0;
+        }
+      }
+    }
+  }
+  div.interview__div__others{
+    text-align: right;
+  }
+}
+
+section.support{
+  display: flex;
+  div.support__div__item{
+    &:nth-of-type(n+2){
+      border-left: 1px solid #aaa;
+    }
+    h3{
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    &-inner{
+      display: flex;
+      &-subitem{
+        box-sizing: content-box;
+        width: 146px;
+        padding: 2rem 5rem;
+        text-align: center;
+        img{
+          display: block;
+          border-radius: 50%;
+        }
+        span::after{
+          display: inline-block;
+          width: 0.25rem;
+          height: 0.25rem;
+          content: "";
+          border-top: 2px solid #aaa;
+          border-right: 2px solid #aaa;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}
+section.news{
+  background-color: #f6f6f6;
+}
+section.press-release, section.information, section.maintenance{
+  dl{
+    div{
+      display: flex;
+      dt,dd{
+        display: inline-block;
+        padding: 1em;
+      }
+      dd.new::before{
+        display: inline-block;
+        content: "NEW";
+        font-size: 0.6em;
+        width: 6em;
+        line-height: 1.5em;
+        text-align: center;
+        color: white;
+        background-color: #005BAC;
+      }
+      dd.notnew::before{
+        display: inline-block;
+        content: "NEW";
+        font-size: 0.6em;
+        width: 6em;
+        line-height: 1.5em;
+        text-align: center;
+        color: white;
+        background-color: #005BAC;
+        visibility: hidden;
+      }
+    }
+  }
+  div.fixed-area{
+    border: 1px solid #CCCCCC;
+    padding: 1em;
+    li{
+      list-style: none;
+      padding: 0.5em;
+    }
+
+  }
+}
+section.sns-badge{
+  display: flex;
+  padding-bottom: 4em;
+  div.embed{
+    margin: 20px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+  }
+}
+section.sitemap{
+  section{
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 1em 0;
+  }
+  li{
+    font-size: 0.9rem;
+    font-weight: bold;
+    list-style: none;
+    line-height: 2em;
+    ul li{
+      font-weight: normal;
+      padding-left: 1em;
+    }
+  }
+  div.sitemap__div__contents{
+    display: flex;
+    justify-content: space-between;
+    div{
+      width: 25%;
+    }
+    }
+}
+footer{
+  background-color: #0062B6;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 2em;
+  padding: 0.8em;
+  ul{
+    display: inline-flex;
+    li{
+      padding: 0 0.5em;
+      display: inline-block;
+    }
+  }
+}
