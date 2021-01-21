@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>やよい軒</title>
+  <!--google フォントの読み込み-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
 
   <!-- Slick䛾見た目カスタマイズ  -->
   <!-- 標準slickと不格好なので、いい感じに表示にしてくれる css（slick-theme.css）がオプションで存在する。 -->
@@ -30,7 +34,9 @@
 
 
 <body>
-  <h1>I miss the taste of dishes at Yayoiken </h1>
+  <!-- //スクロール量を計上する -->
+  <div id="scrollValue"></div>
+
   <div class="header-column">
 
     <div class="header">
@@ -81,13 +87,14 @@
             </a>
           </li>
 
-          <li class="side-menu-parent">
+          <li class="float-menu-parent">
             <a href="/reason/index.html" style="height: 70px;">
               <span>弥生シリーズ</span>
             </a>
           
-            <ul class="side-menu1">
-              <li>弥生シリーズ　トップ</li>
+            <ul class="float-menu1">
+              <li class="float-menu-top">
+                <span class="arrow">></span>弥生シリーズ　トップ</li>
               <li>弥生オンライン（クラウドアプリ）</li>
               <li>弥生オンライン（クラウドアプリ）</li>
               <li>弥生オンライン（クラウドアプリ）</li>
@@ -1051,32 +1058,15 @@
     <!-- footer -->
   </div>
 
-  <a href="#top" class="link-pagetop" style="display: block;">
+<div class="fixed-button">
+  <a href="#top" id="adding" style="display: block;">
     <img src="pics/btn_goToTop_off.png" alt="ページトップへ" class="js-roll" style="opacity: 1;">
   </a>
+</div>
+  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- 画面トップの大きい画像を回す -->
   <script>
     $('.big-pictures').slick({
       autoplay: true,//自動で動くかどうか
@@ -1085,6 +1075,24 @@
       dots: true,  //ドットナビを表示するかどうか
       fade: true,
     });
+
+
+// managing fixed button 
+window.addEventListener("scroll",function(){
+  let scroll = document.documentElement.scrollTop;
+  // document.getElementsById("scrollValue").textContent = scroll;
+  console.log(scroll);
+
+  //スクロール値が２００を超えたらid=addingのあるタグにlink-pagetopを付け足し、ｃｓｓに予め記載されたものが発動する
+  if(scroll > 200){
+    document.getElementById("adding").classList.add("link-pagetop");
+  }
+  //200以下で上で付加したものを取り除く
+  if(scroll < 200){
+    document.getElementById("adding").classList.remove("link-pagetop");
+  }
+  }
+);
 
 
 
